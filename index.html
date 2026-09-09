@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080a0c">
+  <meta name="description" content="Explore Pakistan through a cinematic visual travel journal.">
+  <title>Explore Pakistan — Cinematic Travel Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-loader" id="siteLoader" aria-hidden="true">
+    <div class="loader-brand">EXPLORE PAKISTAN</div>
+    <div class="loader-track"><span></span></div>
+  </div>
+
+  <a class="skip-link" href="#gallery">Skip to gallery</a>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-side nav-side-left">
+      <a class="nav-link active" href="#home" data-nav="home">HOME</a>
+    </div>
+
+    <a class="nav-monogram" href="#home" aria-label="Explore Pakistan home"></a>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="nav-link" href="#gallery" data-nav="gallery">GALLERY</a>
+      <a class="nav-link" href="#about" data-nav="about">ABOUT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+
+    <div class="hero-media-wrap">
+        <img
+            class="hero-media"
+            src="images/hero-pakistan.jpg"
+            alt="Explore Pakistan"
+        >
+    </div>
+
+    <div class="hero-content-shell">
+
+        <div class="hero-content">
+
+            <p class="hero-eyebrow">
+                DISCOVER · TRAVEL · EXPERIENCE
+            </p>
+
+            <h1 class="hero-title">
+                EXPLORE PAKISTAN
+            </h1>
+
+            <p class="hero-copy">
+                A cinematic journey through high mountains,
+                blue lakes, distant shores and cities shaped
+                by centuries of culture.
+            </p>
+
+            <a href="#gallery" class="hero-cta">
+                VIEW GALLERY ↘
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-scroll">
+        SCROLL
+    </div>
+
+</section>
+    <section class="gallery-section" id="gallery">
+      <div class="gallery-bg" id="galleryBg" aria-hidden="true"></div>
+      <div class="gallery-bg-overlay" aria-hidden="true"></div>
+      <div class="gallery-grain" aria-hidden="true"></div>
+
+      <div class="shell gallery-shell">
+        <header class="gallery-head">
+          <div>
+            <p class="section-kicker">VISUAL JOURNAL / 01</p>
+            <h2>Places that stay<br><em>with you.</em></h2>
+          </div>
+          <p class="gallery-intro">
+            Four perspectives on Pakistan, curated as a moving sequence rather than a conventional carousel.
+          </p>
+        </header>
+
+        <div class="category-tabs" role="tablist" aria-label="Gallery categories">
+          <span class="category-index" aria-hidden="true">01</span>
+          <button class="category-tab active" data-category="mountains" role="tab" aria-selected="true">MOUNTAINS</button>
+          <button class="category-tab" data-category="lakes" role="tab" aria-selected="false">LAKES</button>
+          <button class="category-tab" data-category="beaches" role="tab" aria-selected="false">BEACHES</button>
+          <button class="category-tab" data-category="cities" role="tab" aria-selected="false">CITIES</button>
+          <button class="category-tab" data-category="heritage" role="tab" aria-selected="false">HERITAGE</button>
+          <button class="category-tab" data-category="waterfalls" role="tab" aria-selected="false">WATERFALLS</button>
+          <span class="category-rule" aria-hidden="true"></span>
+        </div>
+
+        <div class="gallery-layout" id="galleryInteractive">
+          <article class="gallery-info">
+            <div class="slide-meta">
+              <div class="slide-number-wrap">
+                <span class="slide-number" id="slideNumber">01</span>
+                <span class="slide-count-label">OF</span>
+                <span class="slide-count" id="slideCount">05</span>
+              </div>
+              <span class="slide-status"><i></i> SELECTED FRAME</span>
+            </div>
+
+            <div class="slide-copy" id="slideCopy">
+              <p class="slide-category text-item" data-text-index="1" id="slideCategory">MOUNTAINS</p>
+              <p class="slide-location text-item" data-text-index="2" id="slideLocation">GILGIT-BALTISTAN, PAKISTAN</p>
+
+              <div class="title-mask text-item" data-text-index="3">
+                <h3 class="slide-title" id="slideTitle">Hunza Valley</h3>
+              </div>
+
+              <p class="slide-description text-item" data-text-index="4" id="slideDescription">
+                A dramatic valley of towering peaks, terraced fields and villages glowing beneath crisp northern skies.
+              </p>
+
+              <button class="view-button text-item" data-text-index="5" id="viewImageBtn" type="button">
+                <span>VIEW IMAGE</span>
+                <span>↗</span>
+              </button>
+            </div>
+
+            <div class="gallery-controls">
+              <div class="arrow-group">
+                <button class="arrow-button" id="prevBtn" type="button" aria-label="Previous image"><span>←</span></button>
+                <button class="arrow-button" id="nextBtn" type="button" aria-label="Next image"><span>→</span></button>
+              </div>
+
+              <div class="progress-wrap">
+                <div class="progress-topline"><span class="progress-label">SCROLL SEQUENCE</span><span id="progressPercent"></span></div>
+                <div class="progress-track"><span class="progress-bar" id="progressBar"></span></div>
+              </div>
+            </div>
+          </article>
+
+          <div class="gallery-visual">
+            <div class="image-stage" id="imageStage" aria-live="polite">
+              <div class="image-backplate" aria-hidden="true"></div>
+              <div class="image-haze" aria-hidden="true"></div>
+              <div class="image-layer previous" id="imagePrevious"><img alt="" decoding="async"></div>
+              <div class="image-layer current" id="imageCurrent"><img alt="" decoding="async"></div>
+              <div class="image-glow" id="imageGlow" aria-hidden="true"></div>
+              <div class="image-border" aria-hidden="true"></div>
+              <div class="image-shine" aria-hidden="true"></div>
+              <div class="image-caption"><span id="imageCaption">01 / 05</span><i></i><span>EXPLORE PAKISTAN</span></div>
+            </div>
+
+            <div class="thumbs-wrap">
+              <span class="thumb-label"></span>
+              <div class="thumbs" id="thumbs" aria-label="Gallery thumbnails"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="shell about-grid">
+        <div>
+          <p class="section-kicker">ABOUT THE COLLECTION </p>
+          <h2>Pakistan,<br><em>framed with feeling.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p>Explore Pakistan is a visual travel gallery built around atmosphere, depth and movement instead of conventional slider mechanics.</p>
+          <p>Each destination is treated like an editorial frame: image, location and story arrive together in a deliberately paced cinematic sequence.</p>
+          <div class="about-facts">
+            <span><strong id="destCount">35</strong> DESTINATIONS</span>
+            <span><strong id="catCount">07</strong> CATEGORIES</span>
+            <span><strong>01</strong> VISUAL JOURNAL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Full image viewer">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image viewer">×</button>
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <figure class="lightbox-figure">
+      <img id="lightboxImage" src="" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
