@@ -233,13 +233,7 @@
           "An industrious northern city famous for its craftsmanship, set among fields close to the Kashmir foothills.",
         image: "images/sialkot.jpg"
       },
-      {
-        title: "Hyderabad",
-        location: "SINDH, PAKISTAN",
-        description:
-          "An old Sindhi city on the Indus, layered with bazaars, forts and a slower, riverside pace of life.",
-        image: "images/hyderabad.jpg"
-      }
+    
     ],
 
     heritage: [
